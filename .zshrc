@@ -8,9 +8,11 @@ fi
 # sources plugins
 source ~/.zplugins
 
+#sources nix
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
+
 #uses shellcolorscripts (i love it!)
 colorscript random
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
