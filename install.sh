@@ -25,4 +25,4 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 antibody bundle < ~/.zpluginst > ~/.zplugins
 
 # Stow all files
-stow .
+stow --adopt .
