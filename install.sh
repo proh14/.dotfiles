@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install nix
-if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then curl -L https://nixos.org/nix/install | sh; fi
+curl -L https://nixos.org/nix/install | sh
 . ~/.nix-profile/etc/profile.d/nix.sh
 # Install all the needed packages
 nix-env -iA \
