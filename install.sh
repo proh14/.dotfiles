@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 # Install nix
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
+bash
 # Install all the needed packages
 nix-env -iA \
   nixpkgs.neovim \
