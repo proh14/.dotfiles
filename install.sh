@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install nix
-bash <(curl -L https://nixos.org/nix/install) --no-daemon
-
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then curl -L https://nixos.org/nix/install | sh; fi
+. ~/.nix-profile/etc/profile.d/nix.sh
 # Install all the needed packages
 nix-env -iA \
   nixpkgs.neovim \
@@ -18,10 +18,14 @@ nix-env -iA \
   nixpkgs.dwt1-shell-color-scripts \
   nixpkgs.neofetch
 
+# Stow all files
+stow --adopt .
+git reset --hard
+
 # Configure zsh
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
 antibody bundle < ~/.zpluginst > ~/.zplugins
 
-# Stow all files
-stow --adopt .
+# Install tpm for tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
