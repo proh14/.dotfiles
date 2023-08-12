@@ -1,0 +1,16 @@
+[user]
+	email = hourrad.f@gmail.com
+	name = Hoorad
+	signingkey = B76D189754A53590
+[core]
+	editor = nvim
+[gpg]
+	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe # I am using wsl feel free to change it!
+[commit]
+	gpgsign = true
+[color]
+	ui = true
+[alias]
+	s = status
+[init]
+	defaultBranch = main
