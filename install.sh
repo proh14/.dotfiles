@@ -26,7 +26,7 @@ stow --adopt .
 # Configure zsh
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
-antibody bundle < ~/.zpluginst > ~/.zplugins
+antibody bundle < ~/.zsh/.zpluginst > ~/.zsh/.zplugins
 
 # Install tpm for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
