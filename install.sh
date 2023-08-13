@@ -29,7 +29,9 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 antibody bundle < ~/.zsh/.zpluginst > ~/.zsh/.zplugins
 
 # Install tpm for tmux
+rm -rf ~/.tmux/plugins/tpm  || true
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux source ~/.config/tmux/tmux.conf
+. ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+
 # Reset git for stow
 git reset --hard
