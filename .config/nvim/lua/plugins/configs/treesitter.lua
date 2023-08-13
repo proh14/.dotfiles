@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "lua", "c" , "bash" , "make" , "vim" , "nvim"},
+  ensure_installed = { "lua", "c" , "bash" , "make" , "vim"},
 
   highlight = {
     enable = true,
