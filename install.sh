@@ -18,7 +18,9 @@ nix-env -iA \
   nixpkgs.vifm \
   nixpkgs.antibody \
   nixpkgs.dwt1-shell-color-scripts \
-  nixpkgs.neofetch
+  nixpkgs.neofetch \
+  nixpkgs.libgccjit \
+  nixpkgs.unzip
 
 # Stow all files
 stow --adopt .
@@ -32,6 +34,9 @@ antibody bundle < ~/.zsh/.zpluginst > ~/.zsh/.zplugins
 rm -rf ~/.tmux/plugins/tpm  || true
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 . ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+
+#Configures neovim
+nvim --headless +"Lazy sync" +"MasonInstallAll" +"TSUpdateSync" +qall
 
 # Reset git for stow
 git reset --hard
