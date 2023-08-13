@@ -30,6 +30,6 @@ antibody bundle < ~/.zpluginst > ~/.zplugins
 
 # Install tpm for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
+tmux source ~/.config/tmux/tmux.conf
 # Reset git for stow
 git reset --hard
