@@ -1,6 +1,8 @@
 #!/bin/bash
 # Install nix
+if [ ! -f ~/.nix-profile/etc/profile.d/nix.sh]; then
 curl -L https://nixos.org/nix/install | sh
+fi
 . ~/.nix-profile/etc/profile.d/nix.sh
 # Install all the needed packages
 nix-env -iA \
@@ -20,7 +22,6 @@ nix-env -iA \
 
 # Stow all files
 stow --adopt .
-git reset --hard
 
 # Configure zsh
 command -v zsh | sudo tee -a /etc/shells
@@ -29,3 +30,6 @@ antibody bundle < ~/.zpluginst > ~/.zplugins
 
 # Install tpm for tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Reset git for stow
+git reset --hard
