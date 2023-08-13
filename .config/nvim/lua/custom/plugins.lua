@@ -62,8 +62,6 @@ local plugins = {
         "clangd",
         "clang-format",
         "lua-language-server",
-        "html-lsp",
-        "prettier",
         "stylua",
         "cpptools",
       },
