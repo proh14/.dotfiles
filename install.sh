@@ -25,6 +25,9 @@ nix-env -iA \
 # Stow all files
 stow --adopt .
 
+# Reset git for stow
+git reset --hard
+
 # Configure zsh
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
@@ -38,5 +41,4 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #Configures neovim
 nvim --headless +"Lazy sync" +"MasonInstallAll" +"TSUpdateSync" +qall
 
-# Reset git for stow
-git reset --hard
+
