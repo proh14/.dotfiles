@@ -7,6 +7,8 @@ fi
 
 # sources plugins
 source ~/.zsh/.zplugins
+# sources zprofile if not sourced
+source .zprofile
 
 #sources nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
