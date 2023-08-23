@@ -33,12 +33,10 @@ command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
 antibody bundle < ~/.zsh/.zpluginst > ~/.zsh/.zplugins
 
+#Configures neovim
+nvim --headless +"Lazy sync" +"MasonInstallAll" +"TSUpdateSync" +qall
+
 # Install tpm for tmux
 rm -rf ~/.tmux/plugins/tpm  || true
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 . ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-
-#Configures neovim
-nvim --headless +"Lazy sync" +"MasonInstallAll" +"TSUpdateSync" +qall
-
-
