@@ -24,6 +24,21 @@ local plugins = {
       lazy = false,
     },
     {
+      "sopa0/telescope-makefile",
+      dependencies = {
+        "nvim-telescope/telescope.nvim",
+        "akinsho/nvim-toggleterm.lua",
+      },
+      config = function()
+        require("telescope").load_extension "make"
+        require("telescope-makefile").setup {
+          makefile_priority = { ".", "build/" },
+          default_target = "[DEFAULT]",
+          make_bin = "make",
+        }
+      end,
+    },
+    {
       "jay-babu/mason-nvim-dap.nvim",
       event = "VeryLazy",
       dependencies = {
