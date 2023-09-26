@@ -1,0 +1,18 @@
+local map = vim.api.nvim_set_keymap
+
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = true, silent = false })
+map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { noremap = true, silent = false })
+map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = true, silent = false })
+map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { noremap = true, silent = false })
+map("n", "<leader>nt", "<cmd>NvimTreeToggle<cr>", { noremap = true, silent = false })
+map("n", "<leader>np", "<cmd>NvimTreeClose<cr>", { noremap = true, silent = false })
+map("n", "<leader>fm", "<cmd>LspZeroFormat<cr>", { noremap = true, silent = false })
+map("n", "<leader>gs", "<cmd>Neogit<cr>", { noremap = true, silent = false })
+map("n", "<F2>", ":w<CR>", { noremap = true })
+map("i", "<F2>", "<ESC>:w<CR>i", { noremap = true })
+map("n", "<F4>", ":e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>", { noremap = true })
+map("n", "<F5>", ":!ctags -R –c++-kinds=+p –fields=+iaS –extra=+q .<CR>", { noremap = true })
+map("n", "<F6>", ":Dox<CR>", { noremap = true })
+map("n", "<F7>", ":make<CR>", { noremap = true })
+map("n", "<S-F7>", ":make clean all<CR>", { noremap = true })
+map("n", "<F12>", "<C-]>", { noremap = true })
