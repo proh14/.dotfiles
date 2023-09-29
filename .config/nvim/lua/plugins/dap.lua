@@ -4,8 +4,8 @@ return {
         event = "VeryLazy",
         dependencies = "mfussenegger/nvim-dap",
         config = function()
-            local dap = require("dap")
-            local dapui = require("dapui")
+            local dap = require "dap"
+            local dapui = require "dapui"
             dapui.setup()
             -- dap.listeners.after.event_initialized["dapui_config"] = function()
             --   dapui.open()
@@ -21,14 +21,13 @@ return {
     {
         "mfussenegger/nvim-dap",
         config = function()
-            local dap = require("dap")
-            local mason_registry = require("mason-registry")
-            local codelldb = mason_registry.get_package("codelldb")
+            local home = os.getenv "HOME"
+            local dap = require "dap"
             dap.adapters.codelldb = {
                 type = "server",
                 port = "5678",
                 executable = {
-                    command = codelldb:get_install_path() .. "/codelldb",
+                    command = home .. "/.local/share/nvim/mason/bin/codelldb",
                     args = { "--port", "5678" },
                 },
                 detached = false,
