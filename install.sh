@@ -8,7 +8,6 @@ fi
 nix-env -iA \
   nixpkgs.neovim \
   nixpkgs.git \
-  nixpkgs.exa \
   nixpkgs.emacs \
   nixpkgs.bat \
   nixpkgs.fzf \

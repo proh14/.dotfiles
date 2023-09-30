@@ -1,4 +1,3 @@
-alias ls=exa --group-directories-first
 alias cls=clear
 alias p='cd ~/projects/'
 alias cdc='cd ~/.config/'
