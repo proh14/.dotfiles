@@ -5,7 +5,7 @@
 [core]
 	editor = nvim
 [gpg]
-	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe # I am using wsl feel free to change it!
+	program = gpg
 [commit]
 	gpgsign = true
 [color]
