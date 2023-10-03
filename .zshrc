@@ -12,10 +12,6 @@ if [[ $EDITOR != nvim ]]; then
   source ~/.zprofile
 fi
 
-
-#fix gpg
-export GPG_TTY=$(tty)
-
 #sources nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
