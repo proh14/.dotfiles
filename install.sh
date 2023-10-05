@@ -19,7 +19,8 @@ nix-env -iA \
   nixpkgs.dwt1-shell-color-scripts \
   nixpkgs.neofetch \
   nixpkgs.gcc \
-  nixpkgs.unzip
+  nixpkgs.unzip \
+  nixpkgs.mc
 
 # Stow all files
 stow --adopt .
@@ -34,6 +35,10 @@ antibody bundle < ~/.zsh/.zpluginst > ~/.zsh/.zplugins
 
 #Configures neovim
 nvim --headless +"Lazy sync" +"MasonInstallAll" +"TSUpdateSync" +qall
+
+#Configures mc
+mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
+
 
 # Install tpm for tmux
 rm -rf ~/.tmux/plugins/tpm  || true
