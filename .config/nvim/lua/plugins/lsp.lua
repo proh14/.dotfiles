@@ -28,7 +28,6 @@ return {
             local sources = {
                 formatting.clang_format,
                 formatting.stylua,
-                lint.cpplint,
             }
 
             null_ls.setup {
