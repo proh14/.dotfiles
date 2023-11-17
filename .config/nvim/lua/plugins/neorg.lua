@@ -17,6 +17,16 @@ return {
                     },
                 },
                 ["core.export"] = {},
+                ["core.completion"] = {
+                    config = {
+                        engine = "nvim-cmp",
+                    },
+                },
+                ["core.journal"] = {
+                    config = {
+                        journal_folder = "journal",
+                    },
+                },
             },
         }
     end,
