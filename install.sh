@@ -14,7 +14,6 @@ nix-env -iA \
   nixpkgs.zsh \
   nixpkgs.tmux \
   nixpkgs.stow \
-  nixpkgs.vifm \
   nixpkgs.antibody \
   nixpkgs.dwt1-shell-color-scripts \
   nixpkgs.neofetch \
