@@ -2,3 +2,4 @@
 .config/configstore
 .zsh/.zplugins
 github-copilot
+.config/gh
