@@ -17,7 +17,6 @@ nix-env -iA \
   nixpkgs.antibody \
   nixpkgs.dwt1-shell-color-scripts \
   nixpkgs.neofetch \
-  nixpkgs.gcc \
   nixpkgs.unzip \
   nixpkgs.mc
 
