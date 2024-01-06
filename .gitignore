@@ -3,3 +3,4 @@
 .zsh/.zplugins
 github-copilot
 .config/gh
+.config/lazygit/state.yml
