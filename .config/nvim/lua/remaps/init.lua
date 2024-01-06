@@ -6,7 +6,7 @@ map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = true, silent 
 map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { noremap = true, silent = false })
 map("n", "<leader>tt", "<cmd>NvimTreeToggle<cr>", { noremap = true, silent = false })
 map("n", "<leader>fm", "<cmd>LspZeroFormat<cr>", { noremap = true, silent = false })
-map("n", "<leader>gs", "<cmd>Neogit<cr>", { noremap = true, silent = false })
+map("n", "<leader>gs", "<cmd>LazyGit<cr>", { noremap = true, silent = false })
 map("n", "<leader>dt", "<cmd>DapUiToggle<cr>", { noremap = true, silent = false })
 map("n", "<leader>db", "<cmd>DapToggleBreakpoint<cr>", { noremap = true, silent = false })
 map("n", "<leader>dt", '<cmd>lua require("dapui").open({reset = true})<cr>', { noremap = true, silent = false })
