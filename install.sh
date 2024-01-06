@@ -18,7 +18,8 @@ nix-env -iA \
   nixpkgs.dwt1-shell-color-scripts \
   nixpkgs.neofetch \
   nixpkgs.unzip \
-  nixpkgs.mc
+  nixpkgs.mc \
+  nixpkgs.lazygit
 
 # Stow all files
 stow --adopt .
