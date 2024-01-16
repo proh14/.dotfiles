@@ -19,7 +19,8 @@ nix-env -iA \
   nixpkgs.neofetch \
   nixpkgs.unzip \
   nixpkgs.mc \
-  nixpkgs.lazygit
+  nixpkgs.lazygit \
+  nixpkgs.neomutt \
 
 # Stow all files
 stow --adopt .
