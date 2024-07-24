@@ -29,7 +29,8 @@ nix-env -iA \
   nixpkgs.nitrogen \
   nixpkgs.alacritty \
   nixpkgs.picom \
-  nixpkgs.catppuccin-gtk
+  nixpkgs.catppuccin-gtk \
+  nixpkgs.catppuccin-cursors.mochaMauve
 
 
 # Stow all files
