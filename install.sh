@@ -21,6 +21,16 @@ nix-env -iA \
   nixpkgs.mc \
   nixpkgs.lazygit \
   nixpkgs.neomutt \
+  nixpkgs.polybar \
+  nixpkgs.bspwm \
+  nixpkgs.dunst \
+  nixpkgs.sxhkd \
+  nixpkgs.rofi \
+  nixpkgs.nitrogen \
+  nixpkgs.alacritty \
+  nixpkgs.picom \
+  nixpkgs.catppuccin-gtk
+
 
 # Stow all files
 stow --adopt .
