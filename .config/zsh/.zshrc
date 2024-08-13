@@ -6,10 +6,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # sources plugins
-source ~/.zsh/.zplugins
+source ~/.config/zsh/.zsh/.zplugins
 # sources zprofile if not sourced
 if [[ $EDITOR != nvim ]]; then
-  source ~/.zprofile
+  source ~/.config/zsh/.zprofile
 fi
 
 #sources nix
@@ -19,14 +19,9 @@ if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile
 colorscript random
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 
-HISTFILE="$XDG_STATE_HOME"/zsh/history
-# Completion files: Use XDG dirs
-[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

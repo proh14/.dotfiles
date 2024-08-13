@@ -1,4 +1,3 @@
 export  EDITOR=nvim
-source ~/.zsh/.zfunctions
-source ~/.zsh/.zaliases
-
+source .zsh/.zfunctions
+source .zsh/.zaliases
