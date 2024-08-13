@@ -20,3 +20,14 @@ colorscript random
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+HISTFILE="$XDG_STATE_HOME"/zsh/history
+# Completion files: Use XDG dirs
+[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
