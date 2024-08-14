@@ -6,6 +6,5 @@ export MANPAGER="nvim +Man!"
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 export TERM=alacritty
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg, gpg2 --homedir "$XDG_DATA_HOME"/gnupg
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export ZDOTDIR=$HOME/.config/zsh
