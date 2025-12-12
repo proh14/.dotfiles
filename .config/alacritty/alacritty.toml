@@ -79,6 +79,7 @@ normal = { family = "hack Nerd Font", style = "Regular"}
 bold = { family = "hack Nerd Font", style = "Bold"}
 italic = { family = "hack Nerd Font", style = "Italic"}
 bold_italic = {family = "hack Nerd Font", style = "Italic"}
-size = 10
+size = 20
 
-
+[env]
+TERM = "xterm-256color"
