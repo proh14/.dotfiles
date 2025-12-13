@@ -1,8 +1,7 @@
 # Installation
-#### 1. Clone this repo
-#### 2. chmod 755 ./install.sh
-#### 3. Run the ./install.sh
+#### 1. ```git clone https://github.com/proh14/.dotfiles"```
+#### 2. ```cd .dotfiles```
+#### 3. ```cd scripts && ./install.sh```
 
 # TODO
-- [ ] Configure emacs
-
+- [ ] Configure AwesomeWM
