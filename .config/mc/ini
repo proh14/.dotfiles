@@ -86,10 +86,11 @@ mcview_eof=
 skin=catppuccin
 
 filepos_max_saved_entries=1024
+shell_directory_timeout=900
 
 [Layout]
 output_lines=0
-left_panel_size=63
+left_panel_size=50
 top_panel_size=0
 message_visible=true
 keybar_visible=true
@@ -106,11 +107,12 @@ timeformat_recent=%b %e %H:%M
 timeformat_old=%b %e  %Y
 ftp_proxy_host=gate
 ftpfs_password=anonymous@
-display_codepage=ASCII
+display_codepage=UTF-8
 source_codepage=Other_8_bit
 autodetect_codeset=
 clipboard_store=
 clipboard_paste=
+spell_language=en
 
 [Colors]
 base_color=
@@ -141,7 +143,7 @@ quick_search_mode=2
 select_flags=6
 
 [Panelize]
-Find *.orig after patching=find . -name \\*.orig -print
 Find SUID and SGID programs=find . \\( \\( -perm -04000 -a -perm /011 \\) -o \\( -perm -02000 -a -perm /01 \\) \\) -print
-Find rejects after patching=find . -name \\*.rej -print
 Modified git files=git ls-files --modified
+Find rejects after patching=find . -name \\*.rej -print
+Find *.orig after patching=find . -name \\*.orig -print
