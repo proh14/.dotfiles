@@ -1,7 +1,3 @@
-.config/tmux/plugins
-.config/configstore
-.zsh/.zplugins
-github-copilot
-.config/gh
-.config/lazygit/state.yml
-.config/emacs
+tmux/.config/tmux/plugins/
+zsh/.config/zsh/.zsh/.zplugins
+vim/.config/vim/plugged/
