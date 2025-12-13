@@ -18,20 +18,12 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 # Install packages using yay
-echo "Installing packages..."
+echo "Installing GUI packages..."
 yay -S --noconfirm --needed \
-  neovim \
-  git \
-  emacs \
-  bat \
-  fzf \
-  zsh \
-  antibody \
-  tmux \
-  stow \
-  shell-color-scripts \
-  fastfetch \
-  unzip \
-  mc \
-  lazygit \
-  neomutt \
+  catppuccin-gtk-theme-mocha \
+  catppuccin-cursors-mocha \
+  firefox \
+  alacritty \
+  picom \
+  rofi \
+  awesome \
