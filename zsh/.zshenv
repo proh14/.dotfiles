@@ -17,7 +17,6 @@ if [ ! -d "$XDG_DATA_HOME/wineprefixes" ]; then
     mkdir -p "$XDG_DATA_HOME/wineprefixes"
 fi
 export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
-export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc, export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
 
 
 # Set environment variables
@@ -29,7 +28,10 @@ export MANPAGER="nvim +Man!"
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 export TERM=alacritty
 export EDITOR="nvim"
+export PATH="$HOME/.local/bin:$PATH"
 
 
 # Set Zsh configuration directory
 export ZDOTDIR=$HOME/.config/zsh
+
+eval $(ssh-agent -s)

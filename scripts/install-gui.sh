@@ -21,39 +21,22 @@ fi
 echo "Installing GUI packages..."
 yay -S --noconfirm --needed \
   catppuccin-gtk-theme-mocha \
-  nerd-fonts-fira-code \
-  catppuccin-gtk-theme-mocha \
   tela-circle-icon-theme-git \
   firefox \
   alacritty \
-  picom-git \
-  rofi \
-  awesome \
-  mpc \
-  playerctl \
-  ncmpcpp \
-  mpd \
   xdg-utils \
-  pipewire \
+  pipewire-audio \
   pipewire-pulse \
   pipewire-alsa \
   alsa-utils \
   feh \
   maim \
-  xclip \
+  wl-clipboard \
   jq \
   pamixer \
   colord \
-  mpdris2 \
   imagemagick \
-  inotify-tool \
-  pavucontrol \
-  thunar \
-
-
-# Enable and start MPD and mpDris2 services
-echo "Enabling and starting MPD and mpDris2 services..."
-systemctl --user enable mpd.service
-systemctl --user start mpd.service
-systemctl --user enable mpDris2.service
-systemctl --user start mpDris2.service
+  pwvucontrol \
+  sway \
+  swaybg \
+  rofi \

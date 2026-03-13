@@ -1,0 +1,23 @@
+#! /bin/bash
+# A simple power menu using rofi bult for swaywm
+
+chosen=$(echo -e "Shutdown\nReboot\nLock\nSuspend\nLogout" | rofi -dmenu -i -theme-str "import ~/.config/rofi/power.rasi")
+
+case $chosen in
+    Shutdown)
+        systemctl poweroff
+        ;;
+    Reboot)
+        systemctl reboot
+        ;;
+    Lock)
+        swaylock -f
+        ;;
+    Suspend)
+        systemctl suspend
+        ;;
+    Logout)
+        swaymsg exit
+        ;;
+esac
+

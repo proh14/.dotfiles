@@ -5,7 +5,7 @@
 echo "Stowing dotfiles..."
 (
 	cd ..
-	stow alacritty awesomewm emacs fonts git lazygit mc mutt nvim tmux vim zsh
+	stow alacritty swaywm emacs fonts git lazygit mc mutt nvim tmux vim zsh
 )
 
 # Configure zsh

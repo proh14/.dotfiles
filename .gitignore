@@ -1,5 +1,7 @@
 tmux/.config/tmux/plugins/
 zsh/.config/zsh/.zsh/.zplugins
 vim/.config/vim/plugged/
-zsh/.config/zsh/.zcompdump-archlinux-5.9 
+zsh/.config/zsh/.zcompdump-archlinux-5.9
 zsh/.config/zsh/.zcompdump-archlinux-5.9.zwc
+awesomewm/.config/mpd/mpd.db
+awesomewm/.config/mpd/mpd.log
