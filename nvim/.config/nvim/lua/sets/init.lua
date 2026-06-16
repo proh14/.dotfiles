@@ -30,11 +30,11 @@ opt.cursorline = true
 opt.laststatus = 2
 opt.list = true
 opt.listchars = {
-	tab = "┊ ",
-	trail = "·",
-	extends = "»",
-	precedes = "«",
-	nbsp = "×",
+  tab = "┊ ",
+  trail = "·",
+  extends = "»",
+  precedes = "«",
+  nbsp = "×",
 }
 opt.cmdheight = 0
 opt.number = true
@@ -49,7 +49,7 @@ opt.swapfile = false
 opt.writebackup = false
 opt.completeopt = { "menu", "menuone", "noselect" }
 opt.shortmess = opt.shortmess + {
-	c = true,
+  c = true,
 }
 opt.showmode = false
 opt.history = 100

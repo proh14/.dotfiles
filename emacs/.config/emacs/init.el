@@ -231,8 +231,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(flycheck lsp-mode forge evil-magit magit counsel-projectile projectile hydra evil-collection evil general counsel ivy-rich which-key rainbow-delimiters catppuccin-theme doom-modeline shrink-path nerd-icons ivy compat command-log-mode)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
